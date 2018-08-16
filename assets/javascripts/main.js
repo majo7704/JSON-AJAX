@@ -117,6 +117,7 @@ const getRemoteTags = function () {
 
 if (localStorage.getItem('savedTags')) {
   let tagsAsJson = localStorage.getItem('savedTags');
+  let tags JSON.parse(tagsAsJson);
 } else {
   getRemoteTags();
 }
