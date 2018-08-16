@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Idea | My Bucket List</title>
+    <meta name="description" content="Ideas for 'travel' on My Bucket List">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+  </head>
+  <body>
+    <svg style="display: none;">
+      <symbol id="pluss" viewBox="0 0 24 24" aria-labeledby="title">
+        <title>Add</title>
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+      </symbol>
+      <symbol id="edit" viewBox="0 0 24 24" aria-labeledby="title">
+        <title>Edit</title>
+        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="content-wrapper">
+        <div class="logo">
+          <a href="/"><span><i>My</i> Bucket List</span></a>
+        </div>
+        <form class="global-search" method="get" action="" role="search">
+          <div class="input-inline">
+            <label class="input-group__label sr-only" for="global-search-input">Looking for inspiration?</label>
+            <div class="input-row">
+              <input id="global-search-input" class="input-row__field" type="text" name="global-search" placeholder="e.g. Swimming with dolphins">
+              <button class="btn btn--inline btn--primary" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+        <nav class="site-header__nav">
+          <ul class="main-navigation">
+            <li><a href="#nolink">Inspiration</a></li>
+            <li><a href="#nolink">Sign Up</a></li>
+            <li><a href="#nolink">Log In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="content-wrapper hr">
+        <div class="media">
+          <div class="media__figure">
+            <img src="assets/images/turtle-big.jpg" alt="Underwater photo of turtle" />
+          </div>
+          <div class="media__body">
+            <div class="goal">
+              <div class="goal__owner">
+                <img class="avatar" src="assets/images/avatar.png" alt="Portrait of Neill Pearman">
+                <p>Created by <a href="#">Frederick Rose</a></p>
+              </div>
+              <h1 class="gamma">Swim with a sea turtle</h1>
+              <ul class="horisontal-list btn-group">
+                <li>
+                  <button class="btn delta" type="button">
+                    <svg class="icon-edit icon--sm" role="presentation">
+                      <use xlink:href="#edit"></use>
+                    </svg>
+                    Edit
+                  </button>
+                </li>
+                <li>
+                  <button class="btn delta" type="button">
+                    <svg class="icon-pluss icon--sm" role="presentation">
+                      <use xlink:href="#pluss"></use>
+                    </svg>
+                    Add
+                  </button>
+                </li>
+              </ul>
+              <div class="goal__intro">
+                <p>
+                  We can put a description about our Idea here!
+                </p>
+              </div>
+              <div class="goal__meta">
+                <span>Created on <time datetime="2017-08-27T03:48">27/08/2017</time></span>
+                <span>1,184 doing this</span>
+                <span><a href="#comments">3 comments</a></span>
+              </div>
+              <ul id="tags" class="tags-list">
+              </ul>
+              <ul class="tags-list">
+                <li>
+                  <button class="btn delta" type="button" id="resetTags">
+                    Reset tags
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div id="comments" class="comments">
+          <h2 class="comments__title">Discussion <span>3 comments</span></h2>
+
+          <form class="comments__input" action="goal.html" method="post">
+            <img class="avatar" src="assets/images/avatar.png" alt="Portrait of writer">
+            <div class="input-group">
+              <label class="input-group__label" for="comment">Add a comment</label>
+              <textarea id="comment" class="input-group__field"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Post</button>
+          </form>
+
+          <ul class="comments__listing">
+            <!-- there are no comments in the raw HTML! -->
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="content-wrapper">
+        <div class="logo logo--inverted footer__logo">
+          <a href="/"><span><i>My</i> Bucket List</span></a>
+        </div>
+        <nav class="footer__navigation">
+          <ul>
+            <li><a href="#nolink">About</a></li>
+            <li><a href="#nolink">Style Guide</a></li>
+            <li><a href="#nolink">Terms of Use</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">&copy; EPFL 2017</p>
+      </div>
+    </footer>
+    <script src="assets/javascripts/main.js" charset="utf-8"></script>
+  </body>
+</html>
