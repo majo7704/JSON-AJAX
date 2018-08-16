@@ -95,6 +95,9 @@ document.getElementById('resetTags').addEventListener('click', function (e) {
 
   // Task 5: Remove any stored tags from local storage and also reload
   //         the tags via AJAX.
+  localStorage.removeItem('savedTags');
+
+  getRemoteTags();
 });
 
 
@@ -117,7 +120,10 @@ const getRemoteTags = function () {
 
 if (localStorage.getItem('savedTags')) {
   let tagsAsJson = localStorage.getItem('savedTags');
-  let tags JSON.parse(tagsAsJson);
+  let tags = JSON.parse(tagsAsJson);
+
+  let tagList = new TagList(tags);
+  tagList.renderAllTags();
 } else {
   getRemoteTags();
 }
